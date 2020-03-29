@@ -8,6 +8,7 @@ Confidential and Proprietary - Protected under copyright and other laws.
 
 using UnityEngine;
 using Vuforia;
+using UnityEngine.UI;
 
 /// <summary>
 /// A custom handler that implements the ITrackableEventHandler interface.
@@ -17,7 +18,16 @@ using Vuforia;
 /// </summary>
 public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandler
 {
-    public UnityEngine.Video.VideoPlayer videoplayer;
+    public Transform InfoPanel;
+    public Transform TitleText;
+    public Transform InfoText;
+    public Transform InfoImage;
+    public Transform InfoPanelBackButton;
+    /* public Transform InfoPanel_AloeVera;
+    public Transform TitleText_AloeVera;
+    public Transform InfoText_AloeVera;
+    public Transform InfoImage_AloeVera;
+    public Transform InfoPanelBackButton_AloeVera; */
 
     #region PROTECTED_MEMBER_VARIABLES
 
@@ -85,10 +95,9 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     protected virtual void OnTrackingFound()
     {
-        videoplayer.Play();
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
-        var canvasComponents = GetComponentsInChildren<Canvas>(true);
+        //var canvasComponents = GetComponentsInChildren<Canvas>(true);
 
         // Enable rendering:
         foreach (var component in rendererComponents)
@@ -99,17 +108,17 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
             component.enabled = true;
 
         // Enable canvas':
-        foreach (var component in canvasComponents)
-            component.enabled = true;
+        //foreach (var component in canvasComponents)
+          //  component.enabled = true;
     }
 
 
     protected virtual void OnTrackingLost()
     {
-        videoplayer.Stop();
+        
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
-        var canvasComponents = GetComponentsInChildren<Canvas>(true);
+        //var canvasComponents = GetComponentsInChildren<Canvas>(true);
 
         // Disable rendering:
         foreach (var component in rendererComponents)
@@ -120,8 +129,20 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
             component.enabled = false;
 
         // Disable canvas':
-        foreach (var component in canvasComponents)
-            component.enabled = false;
+        //foreach (var component in canvasComponents)
+          //  component.enabled = false;
+
+        InfoPanel.gameObject.SetActive(false);
+        InfoImage.gameObject.SetActive(false);
+        InfoText.gameObject.SetActive(false);
+        TitleText.gameObject.SetActive(false);
+        InfoPanelBackButton.gameObject.SetActive(false);
+
+        /* InfoPanel_AloeVera.gameObject.SetActive(false);
+        InfoImage_AloeVera.gameObject.SetActive(false);
+        InfoText_AloeVera.gameObject.SetActive(false);
+        TitleText_AloeVera.gameObject.SetActive(false);
+        InfoPanelBackButton_AloeVera.gameObject.SetActive(false); */
     }
 
     #endregion // PROTECTED_METHODS

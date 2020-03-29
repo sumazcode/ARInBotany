@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Plants>
+	<Plant>
+		<name>IT_Tiger</name>
+		<title>Information about Tulsi</title>
+		<info>
+			Ocimum tenuiflorum (synonym Ocimum sanctum), commonly known as holy basil or tulsi, 
+			is an aromatic perennial plant in the family Lamiaceae. It is native to the Indian 
+			subcontinent and widespread as a cultivated plant throughout the Southeast Asian tropics.
+		</info>
+		<infoimage>Tulsi</infoimage>
+	</Plant>
+	<Plant>
+		<name>IT_Cow</name>
+		<title>Information about Aloe Vera</title>
+		<info>
+			Aloe Vera is a medicinal plant with lot of health benefits.
+		</info>
+		<infoimage>green_leaf_small</infoimage>
+	</Plant>
+</Plants>

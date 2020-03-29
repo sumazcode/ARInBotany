@@ -9,4 +9,9 @@ public class GraphicsMode : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
+    public void InfoPanelBackCommand()
+    {
+        SceneManager.LoadScene(0);
+    }
 }

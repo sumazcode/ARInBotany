@@ -53,10 +53,51 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\dataTarget.cs" />
+     <Compile Include="Assets\DSMode.cs" />
      <Compile Include="Assets\GraphicsMode.cs" />
      <Compile Include="Assets\HomeMenu.cs" />
+     <Compile Include="Assets\InfoPanel.cs" />
+     <Compile Include="Assets\Lean\Common\Scripts\LeanHelper.cs" />
+     <Compile Include="Assets\Lean\Common\Scripts\LeanInspector.cs" />
+     <Compile Include="Assets\Lean\Touch\Examples\Scripts\LeanDestroy.cs" />
+     <Compile Include="Assets\Lean\Touch\Examples\Scripts\LeanDragCamera.cs" />
+     <Compile Include="Assets\Lean\Touch\Examples\Scripts\LeanDragTrail.cs" />
+     <Compile Include="Assets\Lean\Touch\Examples\Scripts\LeanDragTranslate.cs" />
+     <Compile Include="Assets\Lean\Touch\Examples\Scripts\LeanFingerData.cs" />
+     <Compile Include="Assets\Lean\Touch\Examples\Scripts\LeanFingerDown.cs" />
+     <Compile Include="Assets\Lean\Touch\Examples\Scripts\LeanFingerFilter.cs" />
+     <Compile Include="Assets\Lean\Touch\Examples\Scripts\LeanFingerOld.cs" />
+     <Compile Include="Assets\Lean\Touch\Examples\Scripts\LeanFingerSet.cs" />
+     <Compile Include="Assets\Lean\Touch\Examples\Scripts\LeanFingerSwipe.cs" />
+     <Compile Include="Assets\Lean\Touch\Examples\Scripts\LeanFingerTap.cs" />
+     <Compile Include="Assets\Lean\Touch\Examples\Scripts\LeanFingerUp.cs" />
+     <Compile Include="Assets\Lean\Touch\Examples\Scripts\LeanInfoText.cs" />
+     <Compile Include="Assets\Lean\Touch\Examples\Scripts\LeanPath.cs" />
+     <Compile Include="Assets\Lean\Touch\Examples\Scripts\LeanPinchScale.cs" />
+     <Compile Include="Assets\Lean\Touch\Examples\Scripts\LeanPlane.cs" />
+     <Compile Include="Assets\Lean\Touch\Examples\Scripts\LeanPulseScale.cs" />
+     <Compile Include="Assets\Lean\Touch\Examples\Scripts\LeanRoll.cs" />
+     <Compile Include="Assets\Lean\Touch\Examples\Scripts\LeanScreenDepth.cs" />
+     <Compile Include="Assets\Lean\Touch\Examples\Scripts\LeanSelect.cs" />
+     <Compile Include="Assets\Lean\Touch\Examples\Scripts\LeanSelectable.cs" />
+     <Compile Include="Assets\Lean\Touch\Examples\Scripts\LeanSelectableBehaviour.cs" />
+     <Compile Include="Assets\Lean\Touch\Examples\Scripts\LeanSelectableGraphicColor.cs" />
+     <Compile Include="Assets\Lean\Touch\Examples\Scripts\LeanSelectableRendererColor.cs" />
+     <Compile Include="Assets\Lean\Touch\Examples\Scripts\LeanSelectableSpriteRendererColor.cs" />
+     <Compile Include="Assets\Lean\Touch\Examples\Scripts\LeanSpawn.cs" />
+     <Compile Include="Assets\Lean\Touch\Examples\Scripts\LeanSwipeBase.cs" />
+     <Compile Include="Assets\Lean\Touch\Examples\Scripts\LeanTouchEvents.cs" />
+     <Compile Include="Assets\Lean\Touch\Examples\Scripts\LeanTwistRotate.cs" />
+     <Compile Include="Assets\Lean\Touch\Examples\Scripts\LeanTwistRotateAxis.cs" />
+     <Compile Include="Assets\Lean\Touch\Scripts\LeanFinger.cs" />
+     <Compile Include="Assets\Lean\Touch\Scripts\LeanGesture.cs" />
+     <Compile Include="Assets\Lean\Touch\Scripts\LeanSnapshot.cs" />
+     <Compile Include="Assets\Lean\Touch\Scripts\LeanTouch.cs" />
      <Compile Include="Assets\OnArCameraRecognition.cs" />
+     <Compile Include="Assets\VideoHandling.cs" />
      <Compile Include="Assets\VideoMode.cs" />
+     <Compile Include="Assets\XmlResPlantsInfo.cs" />
      <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
      <None Include="Assets\Vuforia\Shaders\CameraDiffuse.shader" />
      <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
@@ -66,6 +107,8 @@
      <None Include="Assets\Vuforia\Shaders\DepthMask.shader" />
      <None Include="Assets\Vuforia\Databases\Emulator\VuforiaEmulator.xml" />
      <None Include="Assets\Vuforia\Shaders\ClippingMask.shader" />
+     <None Include="Assets\Lean\READ ME.txt" />
+     <None Include="Assets\Resources\PlantsInfo.xml" />
      <None Include="Assets\Vuforia\Shaders\BrightTexture.shader" />
      <None Include="Assets\Vuforia\Shaders\DepthContour.shader" />
      <None Include="Assets\Vuforia\Shaders\Text3D.shader" />
@@ -278,6 +321,12 @@
  </Reference>
  <Reference Include="UnityEngine.SpatialTracking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.Data">
+ <HintPath>E:/mtech-it-rvce/Mtech_Sem_2/Industry_4_0/Unity3D_AR/Unity3D_Botany/ARInBotany/Assets/Plugins/Mono.Data.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.Data.Sqlite">
+ <HintPath>E:/mtech-it-rvce/Mtech_Sem_2/Industry_4_0/Unity3D_AR/Unity3D_Botany/ARInBotany/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
  <HintPath>E:/mtech-it-rvce/Mtech_Sem_2/Industry_4_0/Unity3D_AR/Unity3D_Botany/ARInBotany/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
